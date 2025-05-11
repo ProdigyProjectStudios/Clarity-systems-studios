@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50; /* A soft, professional dark blue/grey */
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #3498db; /* Soft blue accent */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.btn-secondary {
+  background-color: #2ecc71; /* Soft green accent */
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #27ae60;
+}
+
+/* Minimalist and calming specific styles */
+header, footer {
+  padding: 20px 0;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #333333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #3498db;
+}
+
+.hero {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.testimonial-card, .product-mockup {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  .hero {
+    padding: 40px 0;
+  }
+}
